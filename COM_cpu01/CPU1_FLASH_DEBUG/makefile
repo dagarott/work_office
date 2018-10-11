@@ -1,0 +1,226 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+SHELL = cmd.exe
+
+CG_TOOL_ROOT := C:/ti/ccsv8/tools/compiler/ti-cgt-c2000_18.1.3.LTS
+
+GEN_OPTS__FLAG := 
+GEN_CMDS__FLAG := 
+
+ORDERED_OBJS += \
+"./main_cpu1.obj" \
+"./App/Chademo.obj" \
+"./App/Diccionario_CANOpen.obj" \
+"./UFCharger/F2837xD/Comun/Drivers/Config_ADC.obj" \
+"./UFCharger/F2837xD/Comun/Drivers/Config_CAN.obj" \
+"./UFCharger/F2837xD/Comun/Drivers/Config_GPIO.obj" \
+"./UFCharger/F2837xD/Comun/Drivers/Config_PWM.obj" \
+"./UFCharger/F2837xD/Comun/Drivers/FIFO.obj" \
+"./UFCharger/F2837xD/Comun/Drivers/Init_HW.obj" \
+"./UFCharger/F2837xD/Comun/Drivers/MEM.obj" \
+"./UFCharger/F2837xD/Comun/F2837xD_DefaultISR.obj" \
+"./UFCharger/F2837xD/Comun/F2837xD_GlobalVariableDefs.obj" \
+"./UFCharger/F2837xD/Comun/common/F2837xD_Adc.obj" \
+"./UFCharger/F2837xD/Comun/common/F2837xD_CodeStartBranch.obj" \
+"./UFCharger/F2837xD/Comun/common/F2837xD_CpuTimers.obj" \
+"./UFCharger/F2837xD/Comun/common/F2837xD_DBGIER.obj" \
+"./UFCharger/F2837xD/Comun/common/F2837xD_Dma.obj" \
+"./UFCharger/F2837xD/Comun/common/F2837xD_ECap.obj" \
+"./UFCharger/F2837xD/Comun/common/F2837xD_EPwm.obj" \
+"./UFCharger/F2837xD/Comun/common/F2837xD_EQep.obj" \
+"./UFCharger/F2837xD/Comun/common/F2837xD_Emif.obj" \
+"./UFCharger/F2837xD/Comun/common/F2837xD_Gpio.obj" \
+"./UFCharger/F2837xD/Comun/common/F2837xD_I2C.obj" \
+"./UFCharger/F2837xD/Comun/common/F2837xD_Ipc.obj" \
+"./UFCharger/F2837xD/Comun/common/F2837xD_Ipc_Driver.obj" \
+"./UFCharger/F2837xD/Comun/common/F2837xD_Ipc_Driver_Lite.obj" \
+"./UFCharger/F2837xD/Comun/common/F2837xD_Ipc_Driver_Util.obj" \
+"./UFCharger/F2837xD/Comun/common/F2837xD_Mcbsp.obj" \
+"./UFCharger/F2837xD/Comun/common/F2837xD_PieCtrl.obj" \
+"./UFCharger/F2837xD/Comun/common/F2837xD_PieVect.obj" \
+"./UFCharger/F2837xD/Comun/common/F2837xD_Sci.obj" \
+"./UFCharger/F2837xD/Comun/common/F2837xD_Spi.obj" \
+"./UFCharger/F2837xD/Comun/common/F2837xD_SysCtrl.obj" \
+"./UFCharger/F2837xD/Comun/common/F2837xD_TempSensorConv.obj" \
+"./UFCharger/F2837xD/Comun/common/F2837xD_Upp.obj" \
+"./UFCharger/F2837xD/Comun/common/F2837xD_can.obj" \
+"./UFCharger/F2837xD/Comun/common/F2837xD_sci_io.obj" \
+"./UFCharger/F2837xD/Comun/common/F2837xD_sdfm_drivers.obj" \
+"./UFCharger/F2837xD/Comun/common/F2837xD_struct.obj" \
+"./UFCharger/F2837xD/Comun/common/F2837xD_usDelay.obj" \
+"./UFCharger/F2837xD/Comun/driverlib/can.obj" \
+"./UFCharger/F2837xD/Comun/driverlib/interrupt.obj" \
+"./UFCharger/F2837xD/Comun/driverlib/sysctl.obj" \
+"./UFCharger/F2837xD/Comun/driverlib/systick.obj" \
+"./UFCharger/F2837xD/Comun/driverlib/uart.obj" \
+"./UFCharger/F2837xD/Comun/driverlib/usb.obj" \
+$(GEN_CMDS__FLAG) \
+-lrts2800_fpu32.lib \
+-l2837xD_FLASH_lnk_cpu1.cmd \
+-lF2837xD_Headers_nonBIOS_cpu1.cmd \
+-llibc.a \
+
+-include ../makefile.init
+
+RM := DEL /F
+RMDIR := RMDIR /S/Q
+
+# All of the sources participating in the build are defined here
+-include sources.mk
+-include subdir_vars.mk
+-include App/subdir_vars.mk
+-include UFCharger/F2837xD/Comun/Drivers/subdir_vars.mk
+-include UFCharger/F2837xD/Comun/subdir_vars.mk
+-include UFCharger/F2837xD/Comun/common/subdir_vars.mk
+-include UFCharger/F2837xD/Comun/driverlib/subdir_vars.mk
+-include subdir_rules.mk
+-include App/subdir_rules.mk
+-include UFCharger/F2837xD/Comun/Drivers/subdir_rules.mk
+-include UFCharger/F2837xD/Comun/subdir_rules.mk
+-include UFCharger/F2837xD/Comun/common/subdir_rules.mk
+-include UFCharger/F2837xD/Comun/driverlib/subdir_rules.mk
+-include objects.mk
+
+ifneq ($(MAKECMDGOALS),clean)
+ifneq ($(strip $(C55_DEPS)),)
+-include $(C55_DEPS)
+endif
+ifneq ($(strip $(C_UPPER_DEPS)),)
+-include $(C_UPPER_DEPS)
+endif
+ifneq ($(strip $(S67_DEPS)),)
+-include $(S67_DEPS)
+endif
+ifneq ($(strip $(S62_DEPS)),)
+-include $(S62_DEPS)
+endif
+ifneq ($(strip $(S_DEPS)),)
+-include $(S_DEPS)
+endif
+ifneq ($(strip $(OPT_DEPS)),)
+-include $(OPT_DEPS)
+endif
+ifneq ($(strip $(C??_DEPS)),)
+-include $(C??_DEPS)
+endif
+ifneq ($(strip $(ASM_UPPER_DEPS)),)
+-include $(ASM_UPPER_DEPS)
+endif
+ifneq ($(strip $(S??_DEPS)),)
+-include $(S??_DEPS)
+endif
+ifneq ($(strip $(C64_DEPS)),)
+-include $(C64_DEPS)
+endif
+ifneq ($(strip $(CXX_DEPS)),)
+-include $(CXX_DEPS)
+endif
+ifneq ($(strip $(S64_DEPS)),)
+-include $(S64_DEPS)
+endif
+ifneq ($(strip $(INO_DEPS)),)
+-include $(INO_DEPS)
+endif
+ifneq ($(strip $(CLA_DEPS)),)
+-include $(CLA_DEPS)
+endif
+ifneq ($(strip $(S55_DEPS)),)
+-include $(S55_DEPS)
+endif
+ifneq ($(strip $(SV7A_DEPS)),)
+-include $(SV7A_DEPS)
+endif
+ifneq ($(strip $(C62_DEPS)),)
+-include $(C62_DEPS)
+endif
+ifneq ($(strip $(C67_DEPS)),)
+-include $(C67_DEPS)
+endif
+ifneq ($(strip $(PDE_DEPS)),)
+-include $(PDE_DEPS)
+endif
+ifneq ($(strip $(K_DEPS)),)
+-include $(K_DEPS)
+endif
+ifneq ($(strip $(C_DEPS)),)
+-include $(C_DEPS)
+endif
+ifneq ($(strip $(CC_DEPS)),)
+-include $(CC_DEPS)
+endif
+ifneq ($(strip $(C++_DEPS)),)
+-include $(C++_DEPS)
+endif
+ifneq ($(strip $(C43_DEPS)),)
+-include $(C43_DEPS)
+endif
+ifneq ($(strip $(S43_DEPS)),)
+-include $(S43_DEPS)
+endif
+ifneq ($(strip $(ASM_DEPS)),)
+-include $(ASM_DEPS)
+endif
+ifneq ($(strip $(S_UPPER_DEPS)),)
+-include $(S_UPPER_DEPS)
+endif
+ifneq ($(strip $(CPP_DEPS)),)
+-include $(CPP_DEPS)
+endif
+ifneq ($(strip $(SA_DEPS)),)
+-include $(SA_DEPS)
+endif
+endif
+
+-include ../makefile.defs
+
+# Add inputs and outputs from these tool invocations to the build variables 
+EXE_OUTPUTS += \
+COM_cpu01.out \
+
+EXE_OUTPUTS__QUOTED += \
+"COM_cpu01.out" \
+
+BIN_OUTPUTS += \
+COM_cpu01.hex \
+
+BIN_OUTPUTS__QUOTED += \
+"COM_cpu01.hex" \
+
+
+# All Target
+all: COM_cpu01.out
+
+# Tool invocations
+COM_cpu01.out: $(OBJS) $(GEN_CMDS)
+	@echo 'Building target: "$@"'
+	@echo 'Invoking: C2000 Linker'
+	"C:/ti/ccsv8/tools/compiler/ti-cgt-c2000_18.1.3.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --advice:performance=all --define=CPU1 --define=_FLASH -g --diag_warning=225 --display_error_number -z -m"COM_cpu01.map" --heap_size=0x400 --stack_size=0x400 --warn_sections -i"C:/Users/dagaro/workspace/Firmware_Test/UFCharger/F2837xD/F2837xD_headers/cmd" -i"C:/Users/dagaro/workspace/Firmware_Test/UFCharger/F2837xD/F2837xD_common/cmd" -i"C:/Users/dagaro/workspace/Firmware_Test/UFCharger/F2837xD/ti-cgt-c2000_16.9.6.LTS/include" -i"C:/Users/dagaro/workspace/Firmware_Test/UFCharger/F2837xD/ti-cgt-c2000_16.9.6.LTS/lib" --reread_libs --display_error_number --xml_link_info="COM_cpu01_linkInfo.xml" --rom_model -o "COM_cpu01.out" $(ORDERED_OBJS)
+	@echo 'Finished building target: "$@"'
+	@echo ' '
+
+COM_cpu01.hex: $(EXE_OUTPUTS)
+	@echo 'Building files: $(strip $(EXE_OUTPUTS__QUOTED))'
+	@echo 'Invoking: C2000 Hex Utility'
+	"C:/ti/ccsv8/tools/compiler/ti-cgt-c2000_18.1.3.LTS/bin/hex2000"  -o "COM_cpu01.hex" $(EXE_OUTPUTS__QUOTED)
+	@echo 'Finished building: $(strip $(EXE_OUTPUTS__QUOTED))'
+	@echo ' '
+
+# Other Targets
+clean:
+	-$(RM) $(BIN_OUTPUTS__QUOTED)$(EXE_OUTPUTS__QUOTED)
+	-$(RM) "main_cpu1.obj" "App\Chademo.obj" "App\Diccionario_CANOpen.obj" "UFCharger\F2837xD\Comun\Drivers\Config_ADC.obj" "UFCharger\F2837xD\Comun\Drivers\Config_CAN.obj" "UFCharger\F2837xD\Comun\Drivers\Config_GPIO.obj" "UFCharger\F2837xD\Comun\Drivers\Config_PWM.obj" "UFCharger\F2837xD\Comun\Drivers\FIFO.obj" "UFCharger\F2837xD\Comun\Drivers\Init_HW.obj" "UFCharger\F2837xD\Comun\Drivers\MEM.obj" "UFCharger\F2837xD\Comun\F2837xD_DefaultISR.obj" "UFCharger\F2837xD\Comun\F2837xD_GlobalVariableDefs.obj" "UFCharger\F2837xD\Comun\common\F2837xD_Adc.obj" "UFCharger\F2837xD\Comun\common\F2837xD_CodeStartBranch.obj" "UFCharger\F2837xD\Comun\common\F2837xD_CpuTimers.obj" "UFCharger\F2837xD\Comun\common\F2837xD_DBGIER.obj" "UFCharger\F2837xD\Comun\common\F2837xD_Dma.obj" "UFCharger\F2837xD\Comun\common\F2837xD_ECap.obj" "UFCharger\F2837xD\Comun\common\F2837xD_EPwm.obj" "UFCharger\F2837xD\Comun\common\F2837xD_EQep.obj" "UFCharger\F2837xD\Comun\common\F2837xD_Emif.obj" "UFCharger\F2837xD\Comun\common\F2837xD_Gpio.obj" 
+	-$(RM) "UFCharger\F2837xD\Comun\common\F2837xD_I2C.obj" "UFCharger\F2837xD\Comun\common\F2837xD_Ipc.obj" "UFCharger\F2837xD\Comun\common\F2837xD_Ipc_Driver.obj" "UFCharger\F2837xD\Comun\common\F2837xD_Ipc_Driver_Lite.obj" "UFCharger\F2837xD\Comun\common\F2837xD_Ipc_Driver_Util.obj" "UFCharger\F2837xD\Comun\common\F2837xD_Mcbsp.obj" "UFCharger\F2837xD\Comun\common\F2837xD_PieCtrl.obj" "UFCharger\F2837xD\Comun\common\F2837xD_PieVect.obj" "UFCharger\F2837xD\Comun\common\F2837xD_Sci.obj" "UFCharger\F2837xD\Comun\common\F2837xD_Spi.obj" "UFCharger\F2837xD\Comun\common\F2837xD_SysCtrl.obj" "UFCharger\F2837xD\Comun\common\F2837xD_TempSensorConv.obj" "UFCharger\F2837xD\Comun\common\F2837xD_Upp.obj" "UFCharger\F2837xD\Comun\common\F2837xD_can.obj" "UFCharger\F2837xD\Comun\common\F2837xD_sci_io.obj" "UFCharger\F2837xD\Comun\common\F2837xD_sdfm_drivers.obj" "UFCharger\F2837xD\Comun\common\F2837xD_struct.obj" "UFCharger\F2837xD\Comun\common\F2837xD_usDelay.obj" "UFCharger\F2837xD\Comun\driverlib\can.obj" 
+	-$(RM) "UFCharger\F2837xD\Comun\driverlib\interrupt.obj" "UFCharger\F2837xD\Comun\driverlib\sysctl.obj" "UFCharger\F2837xD\Comun\driverlib\systick.obj" "UFCharger\F2837xD\Comun\driverlib\uart.obj" "UFCharger\F2837xD\Comun\driverlib\usb.obj" 
+	-$(RM) "main_cpu1.d" "App\Chademo.d" "App\Diccionario_CANOpen.d" "UFCharger\F2837xD\Comun\Drivers\Config_ADC.d" "UFCharger\F2837xD\Comun\Drivers\Config_CAN.d" "UFCharger\F2837xD\Comun\Drivers\Config_GPIO.d" "UFCharger\F2837xD\Comun\Drivers\Config_PWM.d" "UFCharger\F2837xD\Comun\Drivers\FIFO.d" "UFCharger\F2837xD\Comun\Drivers\Init_HW.d" "UFCharger\F2837xD\Comun\Drivers\MEM.d" "UFCharger\F2837xD\Comun\F2837xD_DefaultISR.d" "UFCharger\F2837xD\Comun\F2837xD_GlobalVariableDefs.d" "UFCharger\F2837xD\Comun\common\F2837xD_Adc.d" "UFCharger\F2837xD\Comun\common\F2837xD_CpuTimers.d" "UFCharger\F2837xD\Comun\common\F2837xD_Dma.d" "UFCharger\F2837xD\Comun\common\F2837xD_ECap.d" "UFCharger\F2837xD\Comun\common\F2837xD_EPwm.d" "UFCharger\F2837xD\Comun\common\F2837xD_EQep.d" "UFCharger\F2837xD\Comun\common\F2837xD_Emif.d" "UFCharger\F2837xD\Comun\common\F2837xD_Gpio.d" "UFCharger\F2837xD\Comun\common\F2837xD_I2C.d" "UFCharger\F2837xD\Comun\common\F2837xD_Ipc.d" "UFCharger\F2837xD\Comun\common\F2837xD_Ipc_Driver.d" 
+	-$(RM) "UFCharger\F2837xD\Comun\common\F2837xD_Ipc_Driver_Lite.d" "UFCharger\F2837xD\Comun\common\F2837xD_Ipc_Driver_Util.d" "UFCharger\F2837xD\Comun\common\F2837xD_Mcbsp.d" "UFCharger\F2837xD\Comun\common\F2837xD_PieCtrl.d" "UFCharger\F2837xD\Comun\common\F2837xD_PieVect.d" "UFCharger\F2837xD\Comun\common\F2837xD_Sci.d" "UFCharger\F2837xD\Comun\common\F2837xD_Spi.d" "UFCharger\F2837xD\Comun\common\F2837xD_SysCtrl.d" "UFCharger\F2837xD\Comun\common\F2837xD_TempSensorConv.d" "UFCharger\F2837xD\Comun\common\F2837xD_Upp.d" "UFCharger\F2837xD\Comun\common\F2837xD_can.d" "UFCharger\F2837xD\Comun\common\F2837xD_sci_io.d" "UFCharger\F2837xD\Comun\common\F2837xD_sdfm_drivers.d" "UFCharger\F2837xD\Comun\common\F2837xD_struct.d" "UFCharger\F2837xD\Comun\driverlib\can.d" "UFCharger\F2837xD\Comun\driverlib\interrupt.d" "UFCharger\F2837xD\Comun\driverlib\sysctl.d" "UFCharger\F2837xD\Comun\driverlib\systick.d" "UFCharger\F2837xD\Comun\driverlib\uart.d" "UFCharger\F2837xD\Comun\driverlib\usb.d" 
+	-$(RM) "UFCharger\F2837xD\Comun\common\F2837xD_CodeStartBranch.d" "UFCharger\F2837xD\Comun\common\F2837xD_DBGIER.d" "UFCharger\F2837xD\Comun\common\F2837xD_usDelay.d" 
+	-@echo 'Finished clean'
+	-@echo ' '
+
+.PHONY: all clean dependents
+.SECONDARY:
+
+-include ../makefile.targets
+

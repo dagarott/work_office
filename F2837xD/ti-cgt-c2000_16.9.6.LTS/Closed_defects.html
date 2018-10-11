@@ -1,0 +1,507 @@
+<html>
+    <head>
+    <style>
+    table {border-collapse:collapse; table-layout:fixed; width:310px;}
+    table td {border: none solid black; width:100px; word-wrap:break-word;}
+    th {  background: #eee; }
+    </style>
+    </head>
+    <body>
+    <table style="text-align:left; width: 100%; border:1px solid #CCC;border:none;">
+    <tr>
+    
+    <td align="left">
+    <a href="http://www.ti.com/">
+    <img alt="" src="data:image/gif;base64,R0lGODlhiAEyANUAAP///wAAAO0gJEBAQL+/v39/fxAQEO/v75+fn8/Pz9/f3/aPkTAwMCAgIHBwcI+Pj2BgYK+vr/rHyFBQUP7x8e4uMv3j5PR0dvJYW/m5uvNmafBKTe88P/zV1virrfedn/WChAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACwAAAAAiAEyAAAG/0CAcEgsGo/IpHLJbDqf0Kh0Sq1ar9isdsvter/gsHhMLpvPUslizW5L0PC4fE6v28ELgX7PX9z/gIGCg4RXeXyIfoWLjI2Oj2KHiHuKQxV7GpCam5ydhZKTApUAFn2ep6ipql6gk6MZfG+rs7S1tkStibh8FLe+v8CPuaZDHm3ByMnKdMOUy8/Q0WbNiBKlzpehslATAd7f4OHgDr/i3gPS6YzUfACwexnX2lEH5vbhDb8HEOEP6v+E2OnZAACUhXfzoCAAZ2DAAHMODYBLoA8cA4AYAwkUcAEAhj0VCobSs80JAwMPFBCp9+0iEQUFDJAr9w1dxpt1Nn4AkE0ABv+PIwWUbGKAohFwNosQcOkLKc6ncjZKoGCq56ShVZwOSUCgq9evXw8AABtWiAKyKotw7Zo2iQIEBQo8oHjAqBOtY7/aJbLWq9itcAsgUKnAbl+yYA8cQFy2yFm0asEqePy1rZHFkjEzrizkMIEjlNnm3fzVSILAcwHUtdMs5BAJfDIQ4eBKC14ADu6FQwCAgbkGRhFI/GaA90uLSQg8xNftbxO8w79FMMKPuNEIDcQ5zKdad78E2b1PMA5AeLjiRap7K74wHIQk6tcjSBBdt8tu4AoYaf8NAQHv4EwnxFLiMNANayP9NIRBQ1A1SUdZ3DYWgAFMMGB9TA34DQTODVH/QDh7DcGfPQI+V9MQByy3XogAPLCiELnpRtGI3rmkom4D/HVAeAEY0OEQLnpjVALiWIZifUUJkSKFacXYn2nS4UahNzPRKE6JXlAgwZZcdrnlBSONogFIRMA2SQW9YCEhANENANYDy6UVAUMdfhjAe0fwSKURCgyHklcOhIeniecQMSdDRipQ6ITeNOAfARE4MJw//DTwQFf49RgBAQjgp5KdVHaFgKTgDOpkUkf1SMSNAcxURJAnegjOo11FKpF+3YXzWRESGSBEdgNcSgCPDHT1gG/5KLqesAQE6s2gXpgZ1LSyDUGbHgoK0QyEV6ypIq5KoTSEkxUO8V8ADPwo/8Sh0fn66jcsusgdoQGgeq5FPy5anY9FHJAbOgakK+uiQizkz70B9KvnwPUmQTAArPJbhJ4NM4wqigPMK06SqzZMJLTfEsFPAqCy+OG8Xsgz7UgebAmAg3r4weVHI3GbVawdewOuWiXuGKBq4bEoBH4jkieEikjQJ/QRtyHcUhGLLnexiAEMWyfOQhRgIcJGkLsrqFMP8fBD9fljqHZEgJ0EeeZIfHTDWhcRMhETFID0EUqHAebKKwMgrQAZwNx3t1i/rbMTRBLnrzdm8+mNhTxamHMAjff7RNOP1wdt1N/syicARqrtGKPeGAFq1VkXTsTY9aqIMsQBNKAiqqIv4f8NA7615NxD6Cgm9zc7q7Yk40ioy4UFVvGNCEEG/T2tmqrPTUSxR5yee9hCBDkduZaR2wAEg1GBeQAFJP6Nq5y35EAERlavuobfUAfOX7Wniirvh3pDXuJ2Y11/wRc7h89wxjskSE9k4GiAA8J3hg4kT3l66MiY9BCSjegBeg8z3J2+8oBueO53iEpCdtxlPsoRwWnEGY/xHIa1c+mHRsZZlJUaBb4k/M9c4FBLqSzGwvs1jEdJqc7wKpa6230lAjEJoMc09zbsHRCHbVNhGTqwAQgiYifX8gkAJsg3DBJxCKwSxwdfUrbk7EkIuYtdEci1scrZroWHa1E4pkOw+Ij/owFY4uEREBaXuMRHYEX8ItS+WMARfYYl75ld2ryjRJuUkHywcyLwkGDH8xgtDBSoohVJIjg/ZHFwVvCWd8Y4OXStsDptgRXqiIAAioUjeCx8mAuHEJ+iPCwmuskjAG4Iv3s0oABXy+DqCNmwA0TnPXaiiCIZZo9GUm1WBTzCE4nwAFfOaooPXJmWYiM4UN5MmE+cEykLJg5XreR2x9nQESIVRm+0j2lwhOQQMtUjYUYqjQk03ftI1zZY8lIIrLPJ6RQALA3SrnAKYIAzgXQeQYJxkkpgZ9tW2IW9QZADItmDBZz3PMKBE6KsfGefYodPUgZJdg6JiOKUQIBqXpMJ/+Pb2QHwKcwTkqpzRfgn11SjSmjtcp8ACKhZEugNAS0zkFM7zSAvVklJxrEJBCiAnnT5BZXxLRNcFAAAOmBFL05tmklYDgHos9LpUcg441RSGmEJT1k+VUkU6x1V4YrTRdaUn0Qglzn/GVRiBhEfD70lUIc5NXo6VIOwXEwSZgrSMdBMeTvpAJc6IISNWjQoXjUCWJXkHDvhSZWS68w5+kjaNnXnknaV5xvdqtqt1AcdBODYEZw0Rp3m8EgT0aPj/DoEZX2jcUf96V2VBFCHMnaf01QUahnG1i94IBQaAEHysEKErPKhAheolkcdutmZmi1xbrtR46ozzvioxDfNdf/SclPFWraW0CYSWW+mQmTb+KWWiPkLwDvbAzJirmd3/gNqK4sbtgEeFnZvHUJ23DiuKJnhsQKoAGVfpskLKuGTeuCAB7iwprXu0TcqOS6WRrqeEEvkdVDcU4zcFK7/0steCX5mxfAzgRDxB8X/HFG/yiiE6DDASGQNAJai2cv+ChadfMoNru4aZKe2tsH1GmNsXWwGC1xLwkRA3h4mfIRuVmDDXGBJo9jbo5SmdDiSq06GYIQv/JhzkP/NbwPq5gB8rrdfyHmmT6m5KFXOuQAQ0BMpnbRmZhpJlQbYVX7rFZc6F26EE3OnWZHM5paYeQBpJMyYk3bXNO4ZAHKms53/4UABD3zAAkaQxAZQfYS/XSBNW0gATSeQlgQY9h4IiEAa8XhCmvpYlwdQJbpQaMkm6DocNQZ1dArwTgDww5HeMUAe31Kf8q3EPC0Zox0hQBHs4Mg5CsgUramWlAOcjnwKOAC2xQMAWX9j3EdYSFLPzWw86wY9gaCAVTBwgTas4bFg7oIDLu0Q4wyc4AivMcJXhfBLmwbhDnBAShxdk3o3oeHkIPidJ5CUCUQgAYFGygPUhQCI86XhRjh2owSk7gnoac6XLLmZjZborSB8Pg1H+GcOntI7w6lrN6fOxPE5AIsLwoJ6CDhUls50W1g1KKNoutSnforLjoQgVM+61jXxW/SrbP3rYC+E1RGB0bCb/ex16Dom0M72tp+BGlF3u9znroUKIyITdM+73quQyVBgfe+ADzwTKADhPcBa8IhP/BA+gOGdKP7xis8AG7QL+cpb/vKYz7zmN6+KIAAAOw=="/>
+    </a>
+    </td>
+    </tr>
+    <tr><td align="center"><h1>Closed Defects in Release</td></tr>
+    </table>
+    <table style="text-align: left; width: 100%;" border="1" cellpadding="2" cellspacing="2">
+    <thead>
+    <tr>
+    <th align="center">ID</th>
+    <th align="center">Summary</th>
+    <th align="center">State</th>
+    <th align="center">Reported In Release</th>
+    <th align="center">Target Release</th>
+    <th align="center">Workaround</th>
+    <th align="center">Release Notes</th>
+    </tr>
+    </thead><tr>
+        <td><a href=https://cqweb.ext.ti.com/cqweb/restapi/SDO-Web/SDOWP/RECORD/CODEGEN-3801?format=HTML&noframes=true&recordType=IncidentReport&loginId=readonly&password=readonly>CODEGEN-3801</a></td>
+        <td>Linker crashes with INTERNAL ERROR (unhandled exception)</td>
+        <td>Fixed</td>
+        <td>C2000_16.9.4.LTS</td>
+        <td>C2000_16.9.6.LTS</td>
+        <td> </td>
+        <td>The linker experiences a segmentation fault when there is a reference from a debug section to a symbol without a section (for example, an absolute symbol).</td>
+        </tr><tr>
+        <td><a href=https://cqweb.ext.ti.com/cqweb/restapi/SDO-Web/SDOWP/RECORD/CODEGEN-3795?format=HTML&noframes=true&recordType=IncidentReport&loginId=readonly&password=readonly>CODEGEN-3795</a></td>
+        <td>C2000 compiler fails to emit load DP instruction</td>
+        <td>Fixed</td>
+        <td>C2000_16.9.0.LTS</td>
+        <td>C2000_16.9.6.LTS</td>
+        <td>Use compiler option --disable_dp_load_opt to disable DP load optimization.</td>
+        <td>The compiler fails to update the DP register before certain variable accesses. The issue is likely to occur when accessing variables that belong to sections that contain a combination of blocked and unblocked variables.</td>
+        </tr><tr>
+        <td><a href=https://cqweb.ext.ti.com/cqweb/restapi/SDO-Web/SDOWP/RECORD/CODEGEN-3676?format=HTML&noframes=true&recordType=IncidentReport&loginId=readonly&password=readonly>CODEGEN-3676</a></td>
+        <td>CLA store-load cycles for read-before-write pipeline hazard</td>
+        <td>Fixed</td>
+        <td></td>
+        <td>C2000_16.9.6.LTS</td>
+        <td>No work around other than upgrade to a fixed version.</td>
+        <td>For CLA instruction scheduling of stores followed by loads, only 2 cycles (instead of 3 cycles) were placed between the store/load.  Fixed this to be the 3 cycles required by CLA pipeline to avoid read-before-write issue.  To offset code size impact (increased NOPs), enabled better memory disambiguation checking to additionally eliminate unnecessary NOPs if a store/load pair were to different memory locations.</td>
+        </tr><tr>
+        <td><a href=https://cqweb.ext.ti.com/cqweb/restapi/SDO-Web/SDOWP/RECORD/CODEGEN-3655?format=HTML&noframes=true&recordType=IncidentReport&loginId=readonly&password=readonly>CODEGEN-3655</a></td>
+        <td>Incorrect code generated for multiplication</td>
+        <td>Fixed</td>
+        <td>C2000_16.9.0.LTS</td>
+        <td>C2000_16.9.6.LTS</td>
+        <td> </td>
+        <td>Under a set of special circumstances too detailed for this release note to describe, it is possible for the compiler to drop certain multiply instructions, yielding incorrect code.  The circumstances are somewhat rare.  This will probably only happen with multiplications near an access of a 32-bit variable that is cast to 16 bits.</td>
+        </tr><tr>
+        <td><a href=https://cqweb.ext.ti.com/cqweb/restapi/SDO-Web/SDOWP/RECORD/CODEGEN-3650?format=HTML&noframes=true&recordType=IncidentReport&loginId=readonly&password=readonly>CODEGEN-3650</a></td>
+        <td>Linker crashes when printing module list to map file</td>
+        <td>Fixed</td>
+        <td>C2000_16.9.0.LTS</td>
+        <td>C2000_16.9.6.LTS</td>
+        <td>Add linker option --mapfile_contents=all,nomodules</td>
+        <td>When creating a linker map file, and a summary of modules is written to the linker map file, and the entry point is undefined, the linker may crash.</td>
+        </tr><tr>
+        <td><a href=https://cqweb.ext.ti.com/cqweb/restapi/SDO-Web/SDOWP/RECORD/CODEGEN-3617?format=HTML&noframes=true&recordType=IncidentReport&loginId=readonly&password=readonly>CODEGEN-3617</a></td>
+        <td>gmtime incorrect when invoked in timezones east of GMT</td>
+        <td>Fixed</td>
+        <td>C2000_16.9.0.LTS</td>
+        <td>C2000_16.9.6.LTS</td>
+        <td>Set the timezone to 0 (UTC) until the fix is in place</td>
+        <td> </td>
+        </tr><tr>
+        <td><a href=https://cqweb.ext.ti.com/cqweb/restapi/SDO-Web/SDOWP/RECORD/CODEGEN-3597?format=HTML&noframes=true&recordType=IncidentReport&loginId=readonly&password=readonly>CODEGEN-3597</a></td>
+        <td>ELF header field e_phoff should be 0 when no program header is present</td>
+        <td>Fixed</td>
+        <td>C2000_16.9.0.LTS</td>
+        <td>C2000_16.9.6.LTS</td>
+        <td> </td>
+        <td>ELF header field e_phoff should be 0 when no program header is present, and ELF header field e_shoff should be 0 when no section headers are present.</td>
+        </tr><tr>
+        <td><a href=https://cqweb.ext.ti.com/cqweb/restapi/SDO-Web/SDOWP/RECORD/CODEGEN-3591?format=HTML&noframes=true&recordType=IncidentReport&loginId=readonly&password=readonly>CODEGEN-3591</a></td>
+        <td>When using fill value, linker may crash or hang</td>
+        <td>Fixed</td>
+        <td>C2000_16.9.0.LTS</td>
+        <td>C2000_16.9.5.LTS</td>
+        <td>Upgrade to 17.6.0.STS or higher</td>
+        <td>When using a fill value on a memory range, the linker may get into a corrupted state and either crash or enter an infinite loop.</td>
+        </tr><tr>
+        <td><a href=https://cqweb.ext.ti.com/cqweb/restapi/SDO-Web/SDOWP/RECORD/CODEGEN-3580?format=HTML&noframes=true&recordType=IncidentReport&loginId=readonly&password=readonly>CODEGEN-3580</a></td>
+        <td>C2000 float to int intrinsics matching error</td>
+        <td>Fixed</td>
+        <td>C2000_16.9.0.LTS</td>
+        <td>C2000_16.9.6.LTS</td>
+        <td>Assign the result to the same signedness as the conversion and subsequently cast it to the other:
+
+  unsigned int x = __f32toui16r(f);
+  int y = x;
+
+  int y = __f32toi16r(f);
+  unsigned int x = y;</td>
+        <td>The following intrinsics fail to match depending on whether the result is assigned to a signed or unsigned int.
+Conversion to unsigned int fails to match when assigned to signed int:
+int x = __f32toui16r(f);
+Conversion to signed int fails to match when assigned to unsigned int:
+unsigned y = __f32toi16r(f);</td>
+        </tr><tr>
+        <td><a href=https://cqweb.ext.ti.com/cqweb/restapi/SDO-Web/SDOWP/RECORD/CODEGEN-2373?format=HTML&noframes=true&recordType=IncidentReport&loginId=readonly&password=readonly>CODEGEN-2373</a></td>
+        <td>Internal linker error triggered by function alias</td>
+        <td>Fixed</td>
+        <td>C2000_16.9.0.LTS</td>
+        <td>C2000_16.9.6.LTS</td>
+        <td> </td>
+        <td>Linker sometimes generates "Assertion failed" message and aborts.</td>
+        </tr><tr>
+        <td><a href=https://cqweb.ext.ti.com/cqweb/restapi/SDO-Web/SDOWP/RECORD/CODEGEN-2343?format=HTML&noframes=true&recordType=IncidentReport&loginId=readonly&password=readonly>CODEGEN-2343</a></td>
+        <td>C2000 indexed addressing performance degradation</td>
+        <td>Fixed</td>
+        <td>C2000_16.9.0.LTS</td>
+        <td>C2000_16.9.5.LTS</td>
+        <td> </td>
+        <td>For array indexing expressions of the form P[N] or P->f, whether written by the user or generated by an optimization, where N is a constant larger than 255 (after scaling by the size of the type), the compiler may generate inefficient code.  We want this:
+
+   MOV AR0, #N
+   MOVL ... *AR1[AR0]
+
+However, the compiler was actually doing this:
+
+    MOV ACC, AR1
+    ADD ACC, #(N/2) << 1
+    MOV AR2, ACC
+    MOVL ..., *AR2[0]
+
+This is much more costly</td>
+        </tr><tr>
+        <td><a href=https://cqweb.ext.ti.com/cqweb/restapi/SDO-Web/SDOWP/RECORD/CODEGEN-2286?format=HTML&noframes=true&recordType=IncidentReport&loginId=readonly&password=readonly>CODEGEN-2286</a></td>
+        <td>palign(8) of .init_array messes up __TI_INITARRAY_Limit address</td>
+        <td>Fixed</td>
+        <td>C2000_16.9.0.LTS</td>
+        <td>C2000_16.9.4.LTS</td>
+        <td>In the linker command file, replace
+ .init_array > FLASH, palign(8), fill = 0xffffffff
+with the following GROUP statement:
+GROUP
+{
+    .init_array
+} > FLASH, palign(8)
+
+The palign(8) on GROUP will ensure that any required padding is added after .init_array. However, both the size of .init_array and the value of __TI_INITARRAY_Limit remain unchanged.</td>
+        <td>Applying palign(8) to .init_array caused __TI_INIT_ARRAY_Limit to be set to the end of .init_array including the padding. This broke RTS startup code responsible for calling constructors because the table of constructors now includes invalid data. This bug has been fixed and __TI_INIT_ARRAY_Limit is no longer affected by padding.</td>
+        </tr><tr>
+        <td><a href=https://cqweb.ext.ti.com/cqweb/restapi/SDO-Web/SDOWP/RECORD/CODEGEN-2238?format=HTML&noframes=true&recordType=IncidentReport&loginId=readonly&password=readonly>CODEGEN-2238</a></td>
+        <td>Compiler incorrectly emits MISRA 10.1 for function argument</td>
+        <td>Fixed</td>
+        <td>C2000_16.9.0.LTS</td>
+        <td>C2000_16.9.6.LTS</td>
+        <td> </td>
+        <td> </td>
+        </tr><tr>
+        <td><a href=https://cqweb.ext.ti.com/cqweb/restapi/SDO-Web/SDOWP/RECORD/CODEGEN-2182?format=HTML&noframes=true&recordType=IncidentReport&loginId=readonly&password=readonly>CODEGEN-2182</a></td>
+        <td>INTERNAL ERROR: opt2000 experienced a segmentation fault</td>
+        <td>Fixed</td>
+        <td>C2000_16.9.0.LTS</td>
+        <td>C2000_16.9.0.LTS</td>
+        <td>The problem appears with a while-loop that places the increment or decrement ahead of the MAC.  Work around it by using a for-loop, or by moving the increment/decrement to the end of the loop body (instead of in the while-loop predicate, for instance).</td>
+        <td>A while-loop like
+
+   while (n--) sum += *x++ * *y++;
+
+may cause the compiler to crash.  Use a for-loop instead.</td>
+        </tr><tr>
+        <td><a href=https://cqweb.ext.ti.com/cqweb/restapi/SDO-Web/SDOWP/RECORD/CODEGEN-2179?format=HTML&noframes=true&recordType=IncidentReport&loginId=readonly&password=readonly>CODEGEN-2179</a></td>
+        <td>I16TOF32 or UI16TOF32 lost or cannot be generated</td>
+        <td>Fixed</td>
+        <td>C2000_16.9.0.LTS</td>
+        <td>C2000_16.9.3.LTS</td>
+        <td> </td>
+        <td>The compiler incorrectly modeled I16TOF32 and UI16TOF32.  This had two detrimental effects:
+1. If the compiler created one of these instructions with a memory operand and gave it post-increment addressing, it could be dropped as dead code, leading to incorrect results.
+2. Some loops that should have used one of these instructions would instead sign extend the 16-bit integer and used I32TOF32 or UI32TOF32 instead.</td>
+        </tr><tr>
+        <td><a href=https://cqweb.ext.ti.com/cqweb/restapi/SDO-Web/SDOWP/RECORD/CODEGEN-2176?format=HTML&noframes=true&recordType=IncidentReport&loginId=readonly&password=readonly>CODEGEN-2176</a></td>
+        <td>RPTB block containing RPT is too small</td>
+        <td>Fixed</td>
+        <td>C2000_16.9.0.LTS</td>
+        <td>C2000_16.9.3.LTS</td>
+        <td> </td>
+        <td>This bug can occur when there is a small loop containing a smaller loop, where the smaller loop behaves like memset(foo, 0, n).  Only the fill value zero will trigger this bug.  The generated RPTB may be one byte too small to be legal, and the assembler will reject the RPTB.</td>
+        </tr><tr>
+        <td><a href=https://cqweb.ext.ti.com/cqweb/restapi/SDO-Web/SDOWP/RECORD/CODEGEN-2171?format=HTML&noframes=true&recordType=IncidentReport&loginId=readonly&password=readonly>CODEGEN-2171</a></td>
+        <td>C2000 compiler disables if conversion on mac</td>
+        <td>Fixed</td>
+        <td>C2000_16.9.0.LTS</td>
+        <td>C2000_16.9.3.LTS</td>
+        <td> </td>
+        <td> </td>
+        </tr><tr>
+        <td><a href=https://cqweb.ext.ti.com/cqweb/restapi/SDO-Web/SDOWP/RECORD/CODEGEN-2168?format=HTML&noframes=true&recordType=IncidentReport&loginId=readonly&password=readonly>CODEGEN-2168</a></td>
+        <td>Incorrect use of MPYA overwrites T register, resulting in wrong computation</td>
+        <td>Fixed</td>
+        <td>C2000_16.9.0.LTS</td>
+        <td>C2000_16.9.4.LTS</td>
+        <td> </td>
+        <td>The kill of register T was not being captured in the MPYA P,loc16,#16bit instruction causing a prior load to the T register to be erroneously overwritten by a subsequent MPYA P,loc16,#16bit instruction.</td>
+        </tr><tr>
+        <td><a href=https://cqweb.ext.ti.com/cqweb/restapi/SDO-Web/SDOWP/RECORD/CODEGEN-2166?format=HTML&noframes=true&recordType=IncidentReport&loginId=readonly&password=readonly>CODEGEN-2166</a></td>
+        <td>INTERNAL ERROR: lnk2000 failed to allocate memory</td>
+        <td>Fixed</td>
+        <td>C2000_16.9.0.LTS</td>
+        <td>C2000_16.9.3.LTS</td>
+        <td>Compile with --disable:cla_scratchpad_overlay, or
+do not allow CLA functions to call any function in any section that may contain its own ancestor.</td>
+        <td>CLA modules should have each function in its own text section, and CLA functions should absolutely not be recursive or mutually recursive in any way.  For this test case, hand-coded CLA functions had two functions (A and C) in the same text section.  A has a call to B, which is in a different text section.  B has a call to C.  This forms a cycle in the call graph, because the linker can only see sections and doesn't realize A and C are different functions.  Due to a bug in the CLA scratchpad overlay optimization, this cycle would cause the linker to go into an infinite loop.</td>
+        </tr><tr>
+        <td><a href=https://cqweb.ext.ti.com/cqweb/restapi/SDO-Web/SDOWP/RECORD/CODEGEN-2143?format=HTML&noframes=true&recordType=IncidentReport&loginId=readonly&password=readonly>CODEGEN-2143</a></td>
+        <td>Anonymous struct in union causes type merging failure at -O4</td>
+        <td>Fixed</td>
+        <td>C2000_16.9.0.LTS</td>
+        <td>C2000_16.9.4.LTS</td>
+        <td>Do not use anonymous structs or unions; give all struct members a name, even if it is never used.</td>
+        <td>Anonymous structs and unions are a GCC extension. They are members of a parent structure and have no names. You access the elements inside them as if they were direct members of the parent class.  If you have an anonymous struct or union inside a union and you use -O4 optimization, you may get the mistaken error "symbol so-and-so redeclared with incompatible type" at link time.</td>
+        </tr><tr>
+        <td><a href=https://cqweb.ext.ti.com/cqweb/restapi/SDO-Web/SDOWP/RECORD/CODEGEN-2119?format=HTML&noframes=true&recordType=IncidentReport&loginId=readonly&password=readonly>CODEGEN-2119</a></td>
+        <td>Stack usage assistant call graph misses callee relationship for some direct calls</td>
+        <td>Fixed</td>
+        <td>C2000_16.9.0.LTS</td>
+        <td>C2000_16.9.3.LTS</td>
+        <td> </td>
+        <td>The Object File Display utility failed to detect function callees when generating call graph information for functions that contain nested blocks.</td>
+        </tr><tr>
+        <td><a href=https://cqweb.ext.ti.com/cqweb/restapi/SDO-Web/SDOWP/RECORD/CODEGEN-2113?format=HTML&noframes=true&recordType=IncidentReport&loginId=readonly&password=readonly>CODEGEN-2113</a></td>
+        <td>Hex utility mishandles space in directory name of output file</td>
+        <td>Fixed</td>
+        <td>C2000_16.9.0.LTS</td>
+        <td>C2000_16.9.4.LTS</td>
+        <td>Use directory names without spaces for output files.</td>
+        <td>The hex utility did not correctly handle spaces in output directory and file names.</td>
+        </tr><tr>
+        <td><a href=https://cqweb.ext.ti.com/cqweb/restapi/SDO-Web/SDOWP/RECORD/CODEGEN-2098?format=HTML&noframes=true&recordType=IncidentReport&loginId=readonly&password=readonly>CODEGEN-2098</a></td>
+        <td>Temp filename collisions on Windows with many parallel invocations</td>
+        <td>Fixed</td>
+        <td>C2000_16.9.0.LTS</td>
+        <td>C2000_16.9.3.LTS</td>
+        <td> </td>
+        <td>In some cases with a large number of compilations in parallel on Windows, the compiler could create temporary files with colliding names, resulting in strange compilation failures.</td>
+        </tr><tr>
+        <td><a href=https://cqweb.ext.ti.com/cqweb/restapi/SDO-Web/SDOWP/RECORD/CODEGEN-2060?format=HTML&noframes=true&recordType=IncidentReport&loginId=readonly&password=readonly>CODEGEN-2060</a></td>
+        <td>Even though option --buffer_diagnostics is not used, compiler issues diagnostic that says it is deprecated</td>
+        <td>Fixed</td>
+        <td>C2000_16.9.0.LTS</td>
+        <td>C2000_16.9.3.LTS</td>
+        <td>None</td>
+        <td>The --buffer_diagnostics compiler option was deprecated as of MCU compilers v16.6.0.STS because this setting became the default behavior for the compiler.  However, the option was passed to the linker and the linker issued a remark stating the option was deprecated.</td>
+        </tr><tr>
+        <td><a href=https://cqweb.ext.ti.com/cqweb/restapi/SDO-Web/SDOWP/RECORD/CODEGEN-2053?format=HTML&noframes=true&recordType=IncidentReport&loginId=readonly&password=readonly>CODEGEN-2053</a></td>
+        <td>Compiler incorrectly reorders struct assign for small, volatile structs with bit-fields</td>
+        <td>Fixed</td>
+        <td>C2000_16.9.0.LTS</td>
+        <td>C2000_16.9.2.LTS</td>
+        <td>Use optimization level 0 or off (option --opt_level)</td>
+        <td>For a very specific optimization, the optimizer may drop a volatile qualifier from a struct assignment.  In some cases, the compiler may later perform an incorrect optimization, most commonly incorrectly reordering volatile assignments.
+
+This bug can only happen in a function compiled with optimization level 1 or higher which contains both of the following: 1) A struct assign where the destination is volatile, and the source is a known constant, and the struct contains a bit-field, and the struct is of size "int" or smaller.  2) Any bit-field access (read or write) other than as part of a struct assign or initialization expression.  That is, the name of the bit-field is present in the access expression.  Note that the optimizer can create this situation by inlining functions, so 1 and 2 might be in different functions in the source code.
+
+Consider a tree x = y where x and y are of type struct S. If the value of y is known at compile time (e.g. a const value), the optimizer will try to turn the struct constant into an integer constant (possibly combining bit-fields) and rewrite the tree to look like this: "(unsigned *)x = 32;" However, if y is volatile, that should be "*(volatile unsigned *)x = 32;" Because the access is not volatile, instruction scheduling could cause this instruction to drift past nearby volatile accesses.</td>
+        </tr><tr>
+        <td><a href=https://cqweb.ext.ti.com/cqweb/restapi/SDO-Web/SDOWP/RECORD/CODEGEN-2050?format=HTML&noframes=true&recordType=IncidentReport&loginId=readonly&password=readonly>CODEGEN-2050</a></td>
+        <td>Use of -o4 causes linker XML map file to have missing input_file entries</td>
+        <td>Fixed</td>
+        <td>C2000_16.9.0.LTS</td>
+        <td>C2000_16.9.2.LTS</td>
+        <td> </td>
+        <td> </td>
+        </tr><tr>
+        <td><a href=https://cqweb.ext.ti.com/cqweb/restapi/SDO-Web/SDOWP/RECORD/CODEGEN-2025?format=HTML&noframes=true&recordType=IncidentReport&loginId=readonly&password=readonly>CODEGEN-2025</a></td>
+        <td>Linker crash message incorrectly suggests submitting a preprocessed file</td>
+        <td>Fixed</td>
+        <td>C2000_16.9.0.LTS</td>
+        <td>C2000_16.9.3.LTS</td>
+        <td> </td>
+        <td> </td>
+        </tr><tr>
+        <td><a href=https://cqweb.ext.ti.com/cqweb/restapi/SDO-Web/SDOWP/RECORD/CODEGEN-1979?format=HTML&noframes=true&recordType=IncidentReport&loginId=readonly&password=readonly>CODEGEN-1979</a></td>
+        <td>Statements before declarations with no white space (aggravated by macros) may cause incorrect parser error</td>
+        <td>Fixed</td>
+        <td>C2000_16.9.0.LTS</td>
+        <td>C2000_16.9.6.LTS</td>
+        <td>Do not start any statement in the left-most column
+Rearrange your code so that there are no statements before declarations.</td>
+        <td>C99 and C++ allow statements before declarations in functions.  This is not allowed by the C89 language, but as an extension, the TI compiler allows such statements in relaxed mode.  However, in certain circumstances, the compiler may emit the 'error: expected "}"' for otherwise legal code which has statements before declarations.
+
+This problem can only occur in relaxed C89 mode (which is the default mode), and 1) you have a function with statements that start in the left-most column, or 2) you use macros where the macro body contains C code with statements before declarations.</td>
+        </tr><tr>
+        <td><a href=https://cqweb.ext.ti.com/cqweb/restapi/SDO-Web/SDOWP/RECORD/CODEGEN-1976?format=HTML&noframes=true&recordType=IncidentReport&loginId=readonly&password=readonly>CODEGEN-1976</a></td>
+        <td>Value of __cplusplus is wrong</td>
+        <td>Fixed</td>
+        <td>C2000_16.9.0.LTS</td>
+        <td>C2000_16.9.2.LTS</td>
+        <td>If possible, use the -ps or --strict_ansi options. This mode will use the strict definition of __cplusplus, which is 199711L.</td>
+        <td>Our parser mimicked G++ behavior for the value of this macro in relaxed ANSI mode.  This reproduced a bug in G++ versions v.4.7 and v.4.3 that has since been fixed.</td>
+        </tr><tr>
+        <td><a href=https://cqweb.ext.ti.com/cqweb/restapi/SDO-Web/SDOWP/RECORD/CODEGEN-1932?format=HTML&noframes=true&recordType=IncidentReport&loginId=readonly&password=readonly>CODEGEN-1932</a></td>
+        <td>Update compiler roadmaps on routine basis</td>
+        <td>Fixed</td>
+        <td>C2000_16.9.0.LTS</td>
+        <td>C2000_16.9.1.LTS</td>
+        <td> </td>
+        <td> </td>
+        </tr><tr>
+        <td><a href=https://cqweb.ext.ti.com/cqweb/restapi/SDO-Web/SDOWP/RECORD/CODEGEN-1927?format=HTML&noframes=true&recordType=IncidentReport&loginId=readonly&password=readonly>CODEGEN-1927</a></td>
+        <td>Float variables allocated to FPU register such as R4H are displayed as "unknown register R4HL" in Variables view</td>
+        <td>Fixed</td>
+        <td>C2000_16.9.0.LTS</td>
+        <td>C2000_16.9.2.LTS</td>
+        <td>Lowering the level of optimization in the project such that the variable is not allocated to a register will allow its value to be displayed correctly in the Variables view.</td>
+        <td>Fixed an issue where FPU32 registers were sometimes incorrectly named and not available during debug.</td>
+        </tr><tr>
+        <td><a href=https://cqweb.ext.ti.com/cqweb/restapi/SDO-Web/SDOWP/RECORD/CODEGEN-1710?format=HTML&noframes=true&recordType=IncidentReport&loginId=readonly&password=readonly>CODEGEN-1710</a></td>
+        <td>Illegal instruction selection for __byte_peripheral_32 on FPU32</td>
+        <td>Fixed</td>
+        <td>C2000_16.9.0.LTS</td>
+        <td>C2000_16.9.2.LTS</td>
+        <td>Try a lower level of optimization.  For our test case, optimization levels lower than 3 did not expose the bug.  However, this workaround may not help for all test cases.</td>
+        <td>Although byte peripheral types are integral, when FPU32 device support is enabled, the compiler might store 32-bit integral values in floating point registers when CPU registers are unavailable.  The compiler erroneously generates a MOVL instruction instead of a MOV32 instruction for moving 32-bit byte peripheral data between floating point registers and byte peripheral memory, if this data gets assigned to a floating point register.</td>
+        </tr><tr>
+        <td><a href=https://cqweb.ext.ti.com/cqweb/restapi/SDO-Web/SDOWP/RECORD/CODEGEN-1709?format=HTML&noframes=true&recordType=IncidentReport&loginId=readonly&password=readonly>CODEGEN-1709</a></td>
+        <td>Using #pragma INTERRUPT(HPI) crashes the compiler</td>
+        <td>Fixed</td>
+        <td>C2000_16.9.0.LTS</td>
+        <td>C2000_16.9.2.LTS</td>
+        <td>Besides not using #pragma INTERRUPT(HPI), there is no workaround. The compiler requires an update.</td>
+        <td>Fixed a crash that occurs when using #pragma INTERRUPT(HPI)</td>
+        </tr><tr>
+        <td><a href=https://cqweb.ext.ti.com/cqweb/restapi/SDO-Web/SDOWP/RECORD/CODEGEN-1703?format=HTML&noframes=true&recordType=IncidentReport&loginId=readonly&password=readonly>CODEGEN-1703</a></td>
+        <td>Designated initializer plus struct hack hangs compiler</td>
+        <td>Fixed</td>
+        <td>C2000_16.9.0.LTS</td>
+        <td>C2000_16.9.1.LTS</td>
+        <td>Avoiding using string constants to initialize objects with flexible array members. Instead, use a brace-initialized array. For example:
+
+struct { int a; char b[]; } mystruct = {0, {'h', 'e', 'l', 'l', 'o'} };</td>
+        <td>Fixed a compiler hang caused by initializing flexible array members with string constants.
+
+struct {int a; char b[]; } mystruct = {0, "hello"} /* Would cause the compiler to hang and/or crash */</td>
+        </tr><tr>
+        <td><a href=https://cqweb.ext.ti.com/cqweb/restapi/SDO-Web/SDOWP/RECORD/CODEGEN-1687?format=HTML&noframes=true&recordType=IncidentReport&loginId=readonly&password=readonly>CODEGEN-1687</a></td>
+        <td>Assembler issues confusing diagnostic: Size is > 64 words, allocation will span page boundary</td>
+        <td>Fixed</td>
+        <td>C2000_16.9.0.LTS</td>
+        <td>C2000_16.9.1.LTS</td>
+        <td>Compile source files without the --issue_remarks option.</td>
+        <td>Blocking related diagnostics are no longer issued by the assembler when compiling C/C++ source files. However, these diagnostics will continue to be issued when compiling hand-coded assembly files. The diagnostics may be disabled by excluding --issue_remarks in the compiler options.</td>
+        </tr><tr>
+        <td><a href=https://cqweb.ext.ti.com/cqweb/restapi/SDO-Web/SDOWP/RECORD/CODEGEN-1671?format=HTML&noframes=true&recordType=IncidentReport&loginId=readonly&password=readonly>CODEGEN-1671</a></td>
+        <td>Arrays of Byte Peripherals or types aligned larger than their size should generate error</td>
+        <td>Fixed</td>
+        <td></td>
+        <td>C2000_16.9.1.LTS</td>
+        <td>Do not attempt to create an array of byte peripheral objects.</td>
+        <td>The C language guarantees that the size of an array is equal to the size of each element times the number of elements. Because we double the alignment of byte peripheral data types but do not change the size, this does not hold true. There would be padding in the array, which is not allowed by the standard.
+Underneath the hood, we use the aligned GCC attribute to change the alignment for byte peripherals. On GCC, if you try to make an array of elements whose alignment is larger than its size (see example code below), you get the following error:
+   "9:1: error: alignment of array elements is greater than element size"
+
+However, our parser doesn’t generate an error. Instead, it just reduces the alignment of the element size silently and makes an array.
+We need to generate an error and document that this is not allowed, both for byte peripherals and the aligned GCC attribute.</td>
+        </tr><tr>
+        <td><a href=https://cqweb.ext.ti.com/cqweb/restapi/SDO-Web/SDOWP/RECORD/CODEGEN-1667?format=HTML&noframes=true&recordType=IncidentReport&loginId=readonly&password=readonly>CODEGEN-1667</a></td>
+        <td>Assignment to 32-bit byte peripheral from 64-bit cast to 32-bit value causes internal error</td>
+        <td>Fixed</td>
+        <td></td>
+        <td>C2000_16.9.0.LTS</td>
+        <td>Saving the cast value to a 32-bit temp and then assigning to the 32-bit byte peripheral will work at optimization settings of 0 and off.</td>
+        <td>If a 64-bit value is cast to a 32-bit value and then assigned to a 32-bit byte peripheral type, an internal error occurs.</td>
+        </tr><tr>
+        <td><a href=https://cqweb.ext.ti.com/cqweb/restapi/SDO-Web/SDOWP/RECORD/CODEGEN-1662?format=HTML&noframes=true&recordType=IncidentReport&loginId=readonly&password=readonly>CODEGEN-1662</a></td>
+        <td>Optimizer incorrectly detects __fmin and __fmax idioms</td>
+        <td>Fixed</td>
+        <td></td>
+        <td>C2000_16.9.1.LTS</td>
+        <td>If you want floating-point absolute value, use fabs.  However, there are other ways this bug could be triggered that have no practical workaround other than to use -Ooff</td>
+        <td> </td>
+        </tr><tr>
+        <td><a href=https://cqweb.ext.ti.com/cqweb/restapi/SDO-Web/SDOWP/RECORD/CODEGEN-1656?format=HTML&noframes=true&recordType=IncidentReport&loginId=readonly&password=readonly>CODEGEN-1656</a></td>
+        <td>Using --gen_profile_info does not work with -o4</td>
+        <td>Fixed</td>
+        <td>C2000_16.9.0.LTS</td>
+        <td>C2000_16.9.4.LTS</td>
+        <td>Lower the optimization level to -o3.</td>
+        <td>Previously, link time optimization failed when profiling options --gen_profile_info and use_profile_info were specified in combination with the --opt_level=4 option. The errors were because profiling options were not supported when used in combination with --opt_level=4.
+
+Application profiling during whole program optimization is now supported. Profiling options --gen_profile_info and --use_profile_info may now be combined with --opt_level=4.</td>
+        </tr><tr>
+        <td><a href=https://cqweb.ext.ti.com/cqweb/restapi/SDO-Web/SDOWP/RECORD/CODEGEN-1640?format=HTML&noframes=true&recordType=IncidentReport&loginId=readonly&password=readonly>CODEGEN-1640</a></td>
+        <td>MISRA 19.1 misreported: #include statements should only be preceded by other preprocessor directives</td>
+        <td>Fixed</td>
+        <td>C2000_16.9.0.LTS</td>
+        <td>C2000_16.9.1.LTS</td>
+        <td>No practical workaround</td>
+        <td> </td>
+        </tr><tr>
+        <td><a href=https://cqweb.ext.ti.com/cqweb/restapi/SDO-Web/SDOWP/RECORD/CODEGEN-1639?format=HTML&noframes=true&recordType=IncidentReport&loginId=readonly&password=readonly>CODEGEN-1639</a></td>
+        <td>MISRA-C:2004 17.6/R false positive when assigning local struct member to static struct member</td>
+        <td>Fixed</td>
+        <td>C2000_16.9.0.LTS</td>
+        <td>C2000_16.9.4.LTS</td>
+        <td> </td>
+        <td> </td>
+        </tr><tr>
+        <td><a href=https://cqweb.ext.ti.com/cqweb/restapi/SDO-Web/SDOWP/RECORD/CODEGEN-1634?format=HTML&noframes=true&recordType=IncidentReport&loginId=readonly&password=readonly>CODEGEN-1634</a></td>
+        <td>MISRA 7.1 misreported: octal tokens in token paste</td>
+        <td>Fixed</td>
+        <td>C2000_16.9.0.LTS</td>
+        <td>C2000_16.9.1.LTS</td>
+        <td>No practical workaround</td>
+        <td> </td>
+        </tr><tr>
+        <td><a href=https://cqweb.ext.ti.com/cqweb/restapi/SDO-Web/SDOWP/RECORD/CODEGEN-1632?format=HTML&noframes=true&recordType=IncidentReport&loginId=readonly&password=readonly>CODEGEN-1632</a></td>
+        <td>MISRA 15.2 misreported: switch clause unconditional break</td>
+        <td>Fixed</td>
+        <td>C2000_16.9.0.LTS</td>
+        <td>C2000_16.9.1.LTS</td>
+        <td>Put an explicit break at the end of the compound statement</td>
+        <td> </td>
+        </tr><tr>
+        <td><a href=https://cqweb.ext.ti.com/cqweb/restapi/SDO-Web/SDOWP/RECORD/CODEGEN-1517?format=HTML&noframes=true&recordType=IncidentReport&loginId=readonly&password=readonly>CODEGEN-1517</a></td>
+        <td>#pragma FUNCTION_OPTIONS meaningless unless at least -o0 is used</td>
+        <td>Fixed</td>
+        <td></td>
+        <td>C2000_16.9.0.LTS</td>
+        <td> </td>
+        <td> </td>
+        </tr><tr>
+        <td><a href=https://cqweb.ext.ti.com/cqweb/restapi/SDO-Web/SDOWP/RECORD/CODEGEN-1510?format=HTML&noframes=true&recordType=IncidentReport&loginId=readonly&password=readonly>CODEGEN-1510</a></td>
+        <td>Assembler incorrectly issues warning on large constant used with MOVI32 instruction</td>
+        <td>Fixed</td>
+        <td>C2000_16.9.0.LTS</td>
+        <td>C2000_16.9.0.LTS</td>
+        <td> </td>
+        <td> </td>
+        </tr><tr>
+        <td><a href=https://cqweb.ext.ti.com/cqweb/restapi/SDO-Web/SDOWP/RECORD/CODEGEN-1420?format=HTML&noframes=true&recordType=IncidentReport&loginId=readonly&password=readonly>CODEGEN-1420</a></td>
+        <td>Compiler mistakenly overwrites upper 32-bits to 0 by using MOVZ instruction to compute var32 |= 0x20</td>
+        <td>Fixed</td>
+        <td>C2000_16.9.0.LTS</td>
+        <td>C2000_16.9.1.LTS</td>
+        <td> </td>
+        <td>Fixed an issue where the compiler would issue a MOVZ instruction that zeroes the upper bits of an XAR register when those upper bits are needed for a future instruction.</td>
+        </tr><tr>
+        <td><a href=https://cqweb.ext.ti.com/cqweb/restapi/SDO-Web/SDOWP/RECORD/CODEGEN-1333?format=HTML&noframes=true&recordType=IncidentReport&loginId=readonly&password=readonly>CODEGEN-1333</a></td>
+        <td>Structure assignment causes compiler to fail with INTERNAL ERROR: Decomposition error</td>
+        <td>Fixed</td>
+        <td></td>
+        <td>C2000_16.9.0.LTS</td>
+        <td>Replace struct assignments involving packed structures with a memcpy() call to copy the contents of the RHS of the struct assign to the LHS.</td>
+        <td> </td>
+        </tr><tr>
+        <td><a href=https://cqweb.ext.ti.com/cqweb/restapi/SDO-Web/SDOWP/RECORD/CODEGEN-1329?format=HTML&noframes=true&recordType=IncidentReport&loginId=readonly&password=readonly>CODEGEN-1329</a></td>
+        <td>Lower diagnostic about redefined opcode to a warning, when a compiler intrinsic is redefined</td>
+        <td>Fixed</td>
+        <td>C2000_16.9.0.LTS</td>
+        <td>C2000_16.9.3.LTS</td>
+        <td>Remove the #define or do not include the header file in assembly files.</td>
+        <td>When a header file attempting to redefine an opcode name is included in assembly files, the assembler issues an error because it is not legal to redefine an opcode name. While this behavior is correct, it causes programs to fail to compile when some C2000 header files are included in assembly files due to the "#define eallow ..." in the header files.</td>
+        </tr><tr>
+        <td><a href=https://cqweb.ext.ti.com/cqweb/restapi/SDO-Web/SDOWP/RECORD/SDSCM00040386?format=HTML&noframes=true&recordType=IncidentReport&loginId=readonly&password=readonly>SDSCM00040386</a></td>
+        <td>Remove -olength option from hex utility's help summary and Users Guides</td>
+        <td>Fixed</td>
+        <td>C2000_16.9.0.LTS</td>
+        <td>C2000_16.9.0.LTS</td>
+        <td> </td>
+        <td> </td>
+        </tr><tr>
+        <td><a href=https://cqweb.ext.ti.com/cqweb/restapi/SDO-Web/SDOWP/RECORD/SDSCM00051734?format=HTML&noframes=true&recordType=IncidentReport&loginId=readonly&password=readonly>SDSCM00051734</a></td>
+        <td>Accepts invalid CLA instruction "MMOV32 MRx, MSTF"</td>
+        <td>Fixed</td>
+        <td>C2000_16.9.0.LTS</td>
+        <td>C2000_16.9.6.LTS</td>
+        <td> </td>
+        <td>When coding in assembly for the CLA, the assembler accepts an instruction of the form MMOV32 MRx, MSTF.  This is not a valid instruction.</td>
+        </tr><tr>
+        <td><a href=https://cqweb.ext.ti.com/cqweb/restapi/SDO-Web/SDOWP/RECORD/SDSCM00051510?format=HTML&noframes=true&recordType=IncidentReport&loginId=readonly&password=readonly>SDSCM00051510</a></td>
+        <td>macro CLOCKS_PER_SEC should be type clock_t</td>
+        <td>Fixed</td>
+        <td></td>
+        <td>C2000_16.9.0.LTS</td>
+        <td> </td>
+        <td> </td>
+        </tr><tr>
+        <td><a href=https://cqweb.ext.ti.com/cqweb/restapi/SDO-Web/SDOWP/RECORD/SDSCM00050540?format=HTML&noframes=true&recordType=IncidentReport&loginId=readonly&password=readonly>SDSCM00050540</a></td>
+        <td>Accepts invalid CLA instruction "MMOV32 mem, MRn, COND"</td>
+        <td>Fixed</td>
+        <td>C2000_16.9.0.LTS</td>
+        <td>C2000_16.9.6.LTS</td>
+        <td>Care should be taken when writing hand-coded assembly to only write valid instructions as they are documented.</td>
+        <td>The CLA assembler accepts an instruction of the form "MMOV32 mem, MRn, COND", which is not legal. There is no conditional MMOV32 to a memory destination. The only valid conditional MMOV32 instructions have register (MRn) destinations.</td>
+        </tr></table>
+    <br>
+    <b>Generated on Mon Oct 23 17:24:24 2017 </b>
+    </body>
+    </html>
