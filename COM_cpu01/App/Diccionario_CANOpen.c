@@ -209,7 +209,8 @@ tCanMsg Diccionario_CanOpen[] = {
         //------------------------------------------------------------------------------
         //  0x9000  Used by ADC sensor PCB. Chademo Protocol
         //------------------------------------------------------------------------------
-        { OD_READ, 0x9000, 0x01, 4, 0x00000000 }, //Vo_Chademo. Voltage value read by ADC from Power Supply
+       // { OD_READ, 0x9000, 0x01, 4, 0x00000000 }, //Vo_Chademo. Voltage value read by ADC from Power Supply
+        { OD_READ, 0x9000, 0x01, 4, 0x12345678 }, //Vo_Chademo. Voltage value read by ADC from Power Supply
         { OD_READ, 0x9000, 0x02, 4, 0x00000000 }, //Io_Chademo. Current value read by ADC from Power Supply
         { OD_READ, 0x9000, 0x03, 4, 0x00000000 }, //TempPos_Chademo. Positive Temperature value read by ADC
         { OD_READ, 0x9000, 0x04, 4, 0x00000000 }, //TempNeg_Chademo. Negative Temperature value read by ADC

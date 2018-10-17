@@ -39,26 +39,26 @@
     FIFO FIFO_CHADEMO;
 
 // Buzones CAN TX para protocolo Chademo
-    tCANMsgObject sTXCANMsg_108;
-    unsigned char txMsgData_108[MSG_DATA_LENGTH];
-    tCANMsgObject sTXCANMsg_109;
-    unsigned char txMsgData_109[MSG_DATA_LENGTH];
-    tCANMsgObject sTXCANMsg_208;
-    unsigned char txMsgData_208[MSG_DATA_LENGTH];
-    tCANMsgObject sTXCANMsg_209;
-    unsigned char txMsgData_209[MSG_DATA_LENGTH];
+//    tCANMsgObject sTXCANMsg_108;
+//    unsigned char txMsgData_108[MSG_DATA_LENGTH];
+//    tCANMsgObject sTXCANMsg_109;
+//    unsigned char txMsgData_109[MSG_DATA_LENGTH];
+//    tCANMsgObject sTXCANMsg_208;
+//    unsigned char txMsgData_208[MSG_DATA_LENGTH];
+//    tCANMsgObject sTXCANMsg_209;
+//    unsigned char txMsgData_209[MSG_DATA_LENGTH];
 
 // Buzones CAN RX para protocolo Chademo
-    tCANMsgObject sRXCANMsg_100;
-    unsigned char rxMsgData_100[MSG_DATA_LENGTH];
-    tCANMsgObject sRXCANMsg_101;
-    unsigned char rxMsgData_101[MSG_DATA_LENGTH];
-    tCANMsgObject sRXCANMsg_102;
-    unsigned char rxMsgData_102[MSG_DATA_LENGTH];
-    tCANMsgObject sRXCANMsg_200;
-    unsigned char rxMsgData_200[MSG_DATA_LENGTH];
-    tCANMsgObject sRXCANMsg_201;
-    unsigned char rxMsgData_201[MSG_DATA_LENGTH];
+//    tCANMsgObject sRXCANMsg_100;
+//    unsigned char rxMsgData_100[MSG_DATA_LENGTH];
+//    tCANMsgObject sRXCANMsg_101;
+//    unsigned char rxMsgData_101[MSG_DATA_LENGTH];
+//    tCANMsgObject sRXCANMsg_102;
+//    unsigned char rxMsgData_102[MSG_DATA_LENGTH];
+//    tCANMsgObject sRXCANMsg_200;
+//    unsigned char rxMsgData_200[MSG_DATA_LENGTH];
+//    tCANMsgObject sRXCANMsg_201;
+//    unsigned char rxMsgData_201[MSG_DATA_LENGTH];
 
 //
 // Variables Globals
@@ -66,7 +66,7 @@
     uint16_t i_for;
     uint32_t timeout = 1000;
     extern uint32_t Tick;
-    tCANMsgObject sTXCANMessage;
+ //   tCANMsgObject sTXCANMessage;
 
 void Init_Chademo ()
 {
@@ -168,6 +168,6 @@ void Transmitir_CAN ()
  static uint16_t i_ID;
 
 
-  CANMessageSet(CANB_BASE, 1, &sTXCANMessage, MSG_OBJ_TYPE_TX);
+  //CANMessageSet(CANB_BASE, 1, &sTXCANMessage, MSG_OBJ_TYPE_TX);
 
 }// FIN Transmitir CAN B

@@ -1,0 +1,36 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/COM_cpu01/App",
+                "${workspaceFolder}/COM_cpu02/App",
+                "${workspaceFolder}/Can_EV",
+                "${workspaceFolder}/Can_Potencia",
+                "${workspaceFolder}/Aplicacion",
+                "${workspaceFolder}/Drivers",
+                "${workspaceFolder}/Libraries",
+                "${workspaceFolder}/Setup"
+            ],
+
+            "compilerPath": "C:\\Program Files\\LLVM\\bin\\clang.exe",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "clang-x64",
+            "browse": {
+                "path": [
+                    "${workspaceFolder}/**",
+            "${workspaceFolder}/App",
+            "${workspaceFolder}/Can_EV",
+            "${workspaceFolder}/Can_Potencia",
+            "${workspaceFolder}/Aplicacion",
+            "${workspaceFolder}/Drivers",
+            "${workspaceFolder}/Libraries",
+            "${workspaceFolder}/Setup"
+                ]
+            }
+        }
+],
+"version": 4
+}

@@ -10,26 +10,25 @@
 
 #include <stdint.h>
 
-#define CCS_Protocol 0  /**/
+#define CCS_Protocol FALSE  /**/
+
 
 /**
  *******************************************************************************
- \typedef        tCanMsg
- \brief          Tipo definido  para mensaje CAN
- \struct         sCanMsg
- \brief          Estructura para mensaje CAN
+ \typedef        sCanMsg
+ \brief          Typedef for CANOpen Messages
  ******************************************************************************/
 typedef struct sCanMsg
 {
-    /** Modo Acceso al dato READ o WRITE*/
+    /**  CD, Command Byte. Access mode, Read or Write */
     char Modo_Acceso;
-    /** Identificador mensaje*/
+    /** OD, Object Dictionary index */
     uint16_t ID;
-    /** Subindice mensaje*/
+    /** SI. SubIndex Message*/
     char SubIndice;
-    /** Longitud de datos (0 - 8)*/
+    /** Buffer Data length  (0-4)*/
     char Len;
-    /** Buffer de datos*/
+    /** Buffer Data*/
     uint32_t Buf;
 } tCanMsg;
 
@@ -87,7 +86,7 @@ enum Indice_Diccionario_TPO
 //  0x2FFx
     Set_Node_ID,
     Restart_Module,
-#ifdef 0
+#ifdef FALSE
 //  0x600x
     Enable,
     Enable_ZVT1,

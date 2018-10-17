@@ -17,44 +17,44 @@
 // $Release Date: 24/09/2018 $
 //###########################################################################
 
-//
-// Included Files
-//
+/* SYSTEM CODE BEGIN Includes*/
 #include "F28x_Project.h"
 #include "F2837xD_Ipc_drivers.h"
+#include <stdint.h>
+/* SYSTEM CODE END Includes */
+
+/* USER CODE BEGIN Includes */
 #include "Inc_Drivers.h"
 #include "DEF_Global.h"
 #include "Chademo.h"
+#include "ComModule.h"
 
-//
-// Main
-//
+/* USER CODE END Includes */
+//#define ISR_ENABLE
+uint16_t CANMsg[10];
+uint16_t *ptrCANMsg;
+uint16_t status = 0;
+enum Indice_Diccionario_TPO OD_Index = FIN_Diccionario;
+
+/*
+ *
+ */
 void main(void)
 {
-//
-//  Iniciar C2000
-//
-    Init_HW ();
+    Init_HW(); /* Initialize all the HW*/
 
-//
-//  Iniciar protocolo Chademo
-//
-    Init_Chademo();
+#ifdef ISR_ENABLE
+    Hablitar_ISR();
+#endif
 
-//
-//  Habilitar las Interrupciones
-//
-    Hablitar_ISR ();
+    ptrCANMsg = &CANMsg;
 
-
-//
-// Bucle Infinito
-//
-    for(;;)
+    for (;;)
     {
-    Chademo ();
+        //Chademo ();
+        OD_Index = Vo_Chademo; //CAN command array Index. Commands present in Diccionario_CANOpen.c file
+        status = Set_CANOpenMsg_to_Tx(OD_Index, &ptrCANMsg);
     }
-
 }
 
 //

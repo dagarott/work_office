@@ -124,14 +124,6 @@ void Config_CANB (uint32_t BitRate, uint16_t ID)
     sRXCANMessage.pucMsgData = rxMsgData;
     CANMessageSet(CANB_BASE, RX_MSG_OBJ_ID, &sRXCANMessage,
                   MSG_OBJ_TYPE_RX);
-
-    sRXCANMessage2.ui32MsgID = 0x101;
-    sRXCANMessage2.ui32MsgIDMask = 0xFFFFFFFF;
-    sRXCANMessage2.ui32Flags = MSG_OBJ_RX_INT_ENABLE | MSG_OBJ_USE_ID_FILTER;;
-    sRXCANMessage2.ui32MsgLen = MSG_DATA_LENGTH;
-    sRXCANMessage2.pucMsgData = rxMsgData2;
-    CANMessageSet(CANB_BASE, 4, &sRXCANMessage2,
-                  MSG_OBJ_TYPE_RX);
 //
 // Start CAN module A and B operations
 //

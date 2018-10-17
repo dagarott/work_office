@@ -27,6 +27,7 @@
 <stringAttribute key="com.ti.ccstudio.debug.debugModel.MRU_PROGRAM.C:\Users\dagaro\workspace\Firmware_Test\UFCharger\COM_cpu01\targetConfigs\TMS320F28379D.ccxml.Texas Instruments XDS100v2 USB Debug Probe/C28xx_CPU2" value="C:/Users\dagaro\workspace\Firmware_Test\UFCharger\COM_cpu02\CPU2_FLASH_DEBUG\COM_cpu02.out"/>
 <stringAttribute key="com.ti.ccstudio.debug.debugModel.MRU_PROGRAM.Texas Instruments XDS100v2 USB Debug Probe/C28xx_CPU2" value="C:/Users\jeniher\PROYECTOS\Workspace_CCS7\UFCharger\COM_cpu02\CPU2_FLASH_DEBUG\COM_cpu02.out"/>
 <mapAttribute key="com.ti.ccstudio.debug.ui.displayFormats">
+<mapEntry key="Texas Instruments XDS100v2 USB Debug Probe/C28xx_CPU1@##separator##@0" value="16-Bit Hex - TI Style"/>
 <mapEntry key="Texas Instruments XDS100v2 USB Debug Probe/C28xx_CPU1@##separator##@1" value="16-Bit Hex - TI Style"/>
 </mapAttribute>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
