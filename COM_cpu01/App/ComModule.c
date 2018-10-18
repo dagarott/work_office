@@ -15,17 +15,18 @@
 
 /* USER CODE BEGIN PV */
 /* Private variables ---------------------------------------------------------*/
-#define MSG_DATA_LENGTH  8
-
 FIFO PowerSupplyMsgTX; //FIFO Tx defined for Power Supply
 FIFO PowerSupplyMsgRX; //FIFO Rx defined for Power Supply
 FIFO PCMsgRX; //FIFO Tx defined for Industrial PC
 FIFO PCMsgTX; //FIFO Rx defined for Industrial PC
-extern tCanMsg Diccionario_CanOpen[];
 tCANMsgObject sTXCANMsg;
-
-//unsigned char txMsgData[MSG_DATA_LENGTH];
 /* USER CODE END PV */
+
+/* USER CODE BEGIN NPV */
+/* Non Private variables ---------------------------------------------------------*/
+enum Indice_Diccionario_TPO OD_Index = FIN_Diccionario;
+/* USER CODE END NPV */
+
 
 /**
  * @brief  Set a new data frame in the correct CANOpen Protocol and stack it in FIFO,
@@ -67,6 +68,7 @@ uint16_t Set_CANOpenMsg_To_Tx(enum Indice_Diccionario_TPO Idx)
 
     return(0x01); //All OK
 }
+
 
 
 

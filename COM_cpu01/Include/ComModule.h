@@ -22,6 +22,11 @@
 #include "Diccionario_CANOpen.h"
 #include "FIFO.h"
 
-uint16_t Set_CANOpenMsg_to_Tx(enum Indice_Diccionario_TPO Idx, uint16_t *ptrMsg);
+#define MSG_DATA_LENGTH  8
+
+extern tCanMsg Diccionario_CanOpen[];
+extern enum Indice_Diccionario_TPO OD_Index;
+
+uint16_t Set_CANOpenMsg_To_Tx(enum Indice_Diccionario_TPO Idx);
 
 #endif /* COMMODULE_H_ */

@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"inc_drivers.h": "c",
+			"fifo.h": "c"
+		}
+	}
+}

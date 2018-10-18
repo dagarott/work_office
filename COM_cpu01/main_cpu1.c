@@ -34,7 +34,6 @@
 uint16_t CANMsg[10];
 uint16_t *ptrCANMsg;
 uint16_t status = 0;
-enum Indice_Diccionario_TPO OD_Index = FIN_Diccionario;
 
 /*
  *
@@ -47,13 +46,12 @@ void main(void)
     Hablitar_ISR();
 #endif
 
-    ptrCANMsg = &CANMsg;
+    OD_Index = Vo_Chademo; //CAN command array Index. Commands present in Diccionario_CANOpen.c file
+    status = Set_CANOpenMsg_To_Tx(OD_Index);
 
     for (;;)
     {
         //Chademo ();
-        OD_Index = Vo_Chademo; //CAN command array Index. Commands present in Diccionario_CANOpen.c file
-        status = Set_CANOpenMsg_to_Tx(OD_Index, &ptrCANMsg);
     }
 }
 
